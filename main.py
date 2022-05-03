@@ -16,27 +16,25 @@ def load_data():
 df = load_data()
     
 with st.spinner(text="Loading map... please wait for a few seconds"):
-        for i in range(101):
-            st.progress(i)
-            st.pydeck_chart(pdk.Deck(
-                 map_style='mapbox://styles/mapbox/light-v9',
-                 initial_view_state=pdk.ViewState(
-                     latitude=40.95,
-                     longitude=-74.0,
-                     zoom=8.28,
-                     pitch=50,
-                     bearing=0
-                 ),
-                 layers=[
-                     pdk.Layer(
-                        'HexagonLayer',
-                        data=load_data(),
-                        get_position='[lng, lat]',
-                        radius=200,
-                        elevation_scale=18,
-                        elevation_range=[0, 3000],
-                        pickable=True,
-                        extruded=True,
-                     ),
-                 ],
-             ))
+    st.pydeck_chart(pdk.Deck(
+         map_style='mapbox://styles/mapbox/light-v9',
+         initial_view_state=pdk.ViewState(
+             latitude=40.95,
+             longitude=-74.0,
+             zoom=8.28,
+             pitch=50,
+             bearing=0
+         ),
+         layers=[
+             pdk.Layer(
+                'HexagonLayer',
+                data=load_data(),
+                get_position='[lng, lat]',
+                radius=200,
+                elevation_scale=18,
+                elevation_range=[0, 3000],
+                pickable=True,
+                extruded=True,
+             ),
+         ],
+     ))
