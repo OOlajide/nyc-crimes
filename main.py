@@ -33,7 +33,7 @@ with st.spinner(text="Loading map... please wait for a few seconds"):
                 radius=200,
                 elevation_scale=18,
                 elevation_range=[0, 3000],
-                pickable=True,
+                pickable=False,
                 extruded=True,
              ),
          ],
