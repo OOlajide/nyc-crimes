@@ -17,7 +17,7 @@ df = load_data()
     
 with st.spinner(text="Loading map... please wait for a few seconds"):
     st.pydeck_chart(pdk.Deck(
-         map_style='mapbox://styles/mapbox/light-v9',
+         map_style="mapbox://styles/mapbox/navigation-night-v1",
          initial_view_state=pdk.ViewState(
              latitude=40.95,
              longitude=-74.0,
