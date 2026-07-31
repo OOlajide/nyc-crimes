@@ -2,8 +2,6 @@
 
 A high-performance 3D geospatial visualization and analytics web application for rendering **355,886 New York City crime incident records** (2006–2016).
 
-![NYC Crimes Platform](https://raw.githubusercontent.com/OOlajide/nyc_crime_dataset/main/nyc_crimes.csv)
-
 ## ✨ Key Features & Architecture
 
 - **🚀 WebGL 3D Spatial Rendering**: Powered by Deck.gl v9 & MapLibre GL JS for smooth 60 FPS rendering of 350K+ spatial coordinates.
