@@ -1,0 +1,17 @@
+{
+  "totalIncidents": 355886,
+  "boroughCounts": {
+    "Manhattan": 121685,
+    "Brooklyn": 104416,
+    "Queens": 53836,
+    "Bronx": 59604,
+    "Staten Island": 16343,
+    "Other": 2
+  },
+  "bounds": {
+    "minLng": -74.254938736,
+    "maxLng": -73.70057651100001,
+    "minLat": 40.499228792,
+    "maxLat": 40.912723396
+  }
+}
